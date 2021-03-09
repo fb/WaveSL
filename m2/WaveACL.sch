@@ -301,17 +301,6 @@ Entry Wire Line
 	1850 5350 1750 5450
 Entry Wire Line
 	1850 5550 1750 5650
-$Comp
-L Connector_Generic:Conn_01x05 J1
-U 1 1 5CD8E9F9
-P 1000 4350
-F 0 "J1" H 918 4767 50  0000 C CNN
-F 1 "Conn_01x05" H 918 4676 50  0000 C CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53261-0571_1x05-1MP_P1.25mm_Horizontal" H 1000 4350 50  0001 C CNN
-F 3 "~" H 1000 4350 50  0001 C CNN
-	1    1000 4350
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 4250 1650 4250
 Wire Wire Line
@@ -691,6 +680,17 @@ F 3 "~" H 6900 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6700 1700
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 6047C9C1
+P 1000 4450
+F 0 "J1" H 918 4967 50  0000 C CNN
+F 1 "Conn_01x08" H 918 4876 50  0000 C CNN
+F 2 "fkl-footprints:Connector_SOICbite" H 1000 4450 50  0001 C CNN
+F 3 "~" H 1000 4450 50  0001 C CNN
+	1    1000 4450
+	-1   0    0    -1  
+$EndComp
 Wire Bus Line
 	4750 3900 4750 5800
 Wire Bus Line
