@@ -192,17 +192,6 @@ LED+
 Text Label 6450 2100 0    50   ~ 0
 LED-
 $Comp
-L MCU_NXP_LPC:LPC812M001JDH16 U2
-U 1 1 5CD6A29A
-P 2550 6350
-F 0 "U2" H 2550 7131 50  0000 C CNN
-F 1 "LPC812M001JDH16" H 2550 7040 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 3500 6950 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/LPC81XM.pdf" H 2550 5850 50  0001 C CNN
-	1    2550 6350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0107
 U 1 1 5CD6D3EF
 P 2550 7050
@@ -289,14 +278,14 @@ Text Label 1300 5100 0    50   ~ 0
 ~RESET
 Text Label 1300 4700 0    50   ~ 0
 GND
-Text Label 3750 6450 0    50   ~ 0
+Text Label 4000 6450 0    50   ~ 0
 SDA
-Text Label 3750 6350 0    50   ~ 0
+Text Label 4000 6350 0    50   ~ 0
 SCK
 Wire Wire Line
-	3250 6350 3500 6350
+	3250 6350 3750 6350
 Wire Wire Line
-	3250 6450 3650 6450
+	3250 6450 3900 6450
 Connection ~ 5500 2100
 Wire Wire Line
 	8100 2250 8300 2250
@@ -384,11 +373,7 @@ Wire Wire Line
 	10950 950  10950 850 
 Wire Wire Line
 	10550 950  10950 950 
-NoConn ~ 3250 6050
-NoConn ~ 3250 6150
-NoConn ~ 3250 6250
 NoConn ~ 3250 6550
-NoConn ~ 1850 6450
 NoConn ~ 3250 6650
 $Comp
 L power:GND #PWR0112
@@ -457,7 +442,7 @@ F 3 "" H 9000 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 4550 9000 4550
+	9200 4550 9150 4550
 Wire Wire Line
 	9000 4550 9000 4400
 Wire Wire Line
@@ -582,7 +567,6 @@ Text Label 1300 4600 0    50   ~ 0
 TXD
 Text Notes 8100 1050 0    50   ~ 0
 Rd from LED datasheet:\n\n3.2 V / 2.1 A\n3.0 V / 1.0 A
-NoConn ~ 1300 4900
 Wire Wire Line
 	3800 1900 4250 1900
 Wire Wire Line
@@ -676,63 +660,63 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm75b.pdf" H 5350 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 5900 3500 5750
+	3750 5900 3750 5750
 $Comp
 L power:+3.3V #PWR0121
 U 1 1 6052C69E
-P 3500 5750
-F 0 "#PWR0121" H 3500 5600 50  0001 C CNN
-F 1 "+3.3V" H 3515 5923 50  0000 C CNN
-F 2 "" H 3500 5750 50  0001 C CNN
-F 3 "" H 3500 5750 50  0001 C CNN
-	1    3500 5750
+P 3750 5750
+F 0 "#PWR0121" H 3750 5600 50  0001 C CNN
+F 1 "+3.3V" H 3765 5923 50  0000 C CNN
+F 2 "" H 3750 5750 50  0001 C CNN
+F 3 "" H 3750 5750 50  0001 C CNN
+	1    3750 5750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 6052E64D
-P 3500 6050
-F 0 "R2" H 3430 6004 50  0000 R CNN
-F 1 "R" H 3430 6095 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 6050 50  0001 C CNN
-F 3 "~" H 3500 6050 50  0001 C CNN
-	1    3500 6050
+P 3750 6050
+F 0 "R2" H 3680 6004 50  0000 R CNN
+F 1 "R" H 3680 6095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3680 6050 50  0001 C CNN
+F 3 "~" H 3750 6050 50  0001 C CNN
+	1    3750 6050
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	3650 5900 3650 5750
+	3900 5900 3900 5750
 $Comp
 L power:+3.3V #PWR0122
 U 1 1 60532BAA
-P 3650 5750
-F 0 "#PWR0122" H 3650 5600 50  0001 C CNN
-F 1 "+3.3V" H 3665 5923 50  0000 C CNN
-F 2 "" H 3650 5750 50  0001 C CNN
-F 3 "" H 3650 5750 50  0001 C CNN
-	1    3650 5750
+P 3900 5750
+F 0 "#PWR0122" H 3900 5600 50  0001 C CNN
+F 1 "+3.3V" H 3915 5923 50  0000 C CNN
+F 2 "" H 3900 5750 50  0001 C CNN
+F 3 "" H 3900 5750 50  0001 C CNN
+	1    3900 5750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 60532BB4
-P 3650 6050
-F 0 "R4" H 3580 6004 50  0000 R CNN
-F 1 "R" H 3580 6095 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3580 6050 50  0001 C CNN
-F 3 "~" H 3650 6050 50  0001 C CNN
-	1    3650 6050
+P 3900 6050
+F 0 "R4" H 3830 6004 50  0000 R CNN
+F 1 "R" H 3830 6095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 6050 50  0001 C CNN
+F 3 "~" H 3900 6050 50  0001 C CNN
+	1    3900 6050
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	3500 6200 3500 6350
-Connection ~ 3500 6350
+	3750 6200 3750 6350
+Connection ~ 3750 6350
 Wire Wire Line
-	3500 6350 3750 6350
+	3750 6350 4000 6350
 Wire Wire Line
-	3650 6200 3650 6450
-Connection ~ 3650 6450
+	3900 6200 3900 6450
+Connection ~ 3900 6450
 Wire Wire Line
-	3650 6450 3750 6450
+	3900 6450 4000 6450
 $Comp
 L Regulator_Linear:TPS7A0533PDBV U3
 U 1 1 60544B0C
@@ -848,10 +832,10 @@ Wire Wire Line
 Wire Wire Line
 	1000 6150 1850 6150
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP10
 U 1 1 605C6B35
 P 5600 5800
-F 0 "TP?" H 5658 5918 50  0000 L CNN
+F 0 "TP10" H 5658 5918 50  0000 L CNN
 F 1 "TestPoint" H 5658 5827 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5800 5800 50  0001 C CNN
 F 3 "~" H 5800 5800 50  0001 C CNN
@@ -863,10 +847,10 @@ Wire Wire Line
 Wire Wire Line
 	5600 5850 5600 5800
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP4
 U 1 1 605CAE10
 P 8750 2250
-F 0 "TP?" H 8808 2368 50  0000 L CNN
+F 0 "TP4" H 8808 2368 50  0000 L CNN
 F 1 "TestPoint" H 8808 2277 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8950 2250 50  0001 C CNN
 F 3 "~" H 8950 2250 50  0001 C CNN
@@ -874,4 +858,228 @@ F 3 "~" H 8950 2250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 8750 2250
+$Comp
+L MCU_NXP_LPC:LPC812M001JDH16 U2
+U 1 1 5CD6A29A
+P 2550 6350
+F 0 "U2" H 2550 7131 50  0000 C CNN
+F 1 "LPC812M001JDH16" H 2550 7040 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 3500 6950 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/LPC81XM.pdf" H 2550 5850 50  0001 C CNN
+	1    2550 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6450 1250 6450
+Text Label 1250 6450 0    50   ~ 0
+GPIO
+Text Label 1300 4900 0    50   ~ 0
+GPIO
+Text Label 3250 6050 0    50   ~ 0
+LED_R
+Text Label 3250 6150 0    50   ~ 0
+LED_G
+Text Label 3250 6250 0    50   ~ 0
+LED_B
+Wire Wire Line
+	9200 4650 9150 4650
+Wire Wire Line
+	9150 4650 9150 4550
+Connection ~ 9150 4550
+Wire Wire Line
+	9150 4550 9000 4550
+$Comp
+L Device:LED_RABG D4
+U 1 1 6053A8B6
+P 4650 4400
+F 0 "D4" H 4650 4897 50  0000 C CNN
+F 1 "LED_RABG" H 4650 4806 50  0000 C CNN
+F 2 "LED_SMD:LED_Kingbright_AAA3528ESGCT" H 4650 4350 50  0001 C CNN
+F 3 "~" H 4650 4350 50  0001 C CNN
+	1    4650 4400
+	1    0    0    -1  
+$EndComp
+Text Label 3650 4200 0    50   ~ 0
+LED_R
+Text Label 3650 4400 0    50   ~ 0
+LED_G
+Text Label 3650 4600 0    50   ~ 0
+LED_B
+Wire Wire Line
+	4450 4400 4300 4400
+Wire Wire Line
+	3650 4600 3950 4600
+Wire Wire Line
+	4450 4200 4300 4200
+$Comp
+L Device:R R7
+U 1 1 60553AC2
+P 4100 4200
+F 0 "R7" H 4030 4154 50  0000 R CNN
+F 1 "R" H 4030 4245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 4200 50  0001 C CNN
+F 3 "~" H 4100 4200 50  0001 C CNN
+	1    4100 4200
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3950 4200 3650 4200
+$Comp
+L Device:R R8
+U 1 1 60554136
+P 4100 4400
+F 0 "R8" H 4030 4354 50  0000 R CNN
+F 1 "R" H 4030 4445 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 4400 50  0001 C CNN
+F 3 "~" H 4100 4400 50  0001 C CNN
+	1    4100 4400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3950 4400 3650 4400
+$Comp
+L Device:R R9
+U 1 1 605543E4
+P 4100 4600
+F 0 "R9" H 4030 4554 50  0000 R CNN
+F 1 "R" H 4030 4645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 4600 50  0001 C CNN
+F 3 "~" H 4100 4600 50  0001 C CNN
+	1    4100 4600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4250 4600 4300 4600
+$Comp
+L power:GND #PWR0124
+U 1 1 6055462A
+P 4950 4450
+F 0 "#PWR0124" H 4950 4200 50  0001 C CNN
+F 1 "GND" V 4955 4322 50  0000 R CNN
+F 2 "" H 4950 4450 50  0001 C CNN
+F 3 "" H 4950 4450 50  0001 C CNN
+	1    4950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4400 4950 4400
+Wire Wire Line
+	4950 4400 4950 4450
+$Comp
+L Connector:TestPoint TP7
+U 1 1 6055C508
+P 4300 4200
+F 0 "TP7" H 4358 4318 50  0000 L CNN
+F 1 "TestPoint" H 4358 4227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4500 4200 50  0001 C CNN
+F 3 "~" H 4500 4200 50  0001 C CNN
+	1    4300 4200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 4200
+Wire Wire Line
+	4300 4200 4250 4200
+$Comp
+L Connector:TestPoint TP8
+U 1 1 6055CE4C
+P 4300 4400
+F 0 "TP8" H 4358 4518 50  0000 L CNN
+F 1 "TestPoint" H 4358 4427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4500 4400 50  0001 C CNN
+F 3 "~" H 4500 4400 50  0001 C CNN
+	1    4300 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 4400
+Wire Wire Line
+	4300 4400 4250 4400
+$Comp
+L Connector:TestPoint TP9
+U 1 1 6055D1DD
+P 4300 4600
+F 0 "TP9" H 4358 4718 50  0000 L CNN
+F 1 "TestPoint" H 4358 4627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4500 4600 50  0001 C CNN
+F 3 "~" H 4500 4600 50  0001 C CNN
+	1    4300 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 4600
+Wire Wire Line
+	4300 4600 4450 4600
+$Comp
+L Connector:TestPoint TP11
+U 1 1 6056FC7A
+P 4950 4400
+F 0 "TP11" H 5008 4518 50  0000 L CNN
+F 1 "TestPoint" H 5008 4427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5150 4400 50  0001 C CNN
+F 3 "~" H 5150 4400 50  0001 C CNN
+	1    4950 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 4400
+$Comp
+L Connector:Screw_Terminal_01x01 J2
+U 1 1 60594B21
+P 900 1600
+F 0 "J2" H 818 1375 50  0000 C CNN
+F 1 "Screw_Terminal_01x01" H 818 1466 50  0000 C CNN
+F 2 "" H 900 1600 50  0001 C CNN
+F 3 "~" H 900 1600 50  0001 C CNN
+	1    900  1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J3
+U 1 1 605989F4
+P 900 1800
+F 0 "J3" H 818 1575 50  0000 C CNN
+F 1 "Screw_Terminal_01x01" H 818 1666 50  0000 C CNN
+F 2 "" H 900 1800 50  0001 C CNN
+F 3 "~" H 900 1800 50  0001 C CNN
+	1    900  1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0125
+U 1 1 605993FD
+P 1200 1550
+F 0 "#PWR0125" H 1200 1400 50  0001 C CNN
+F 1 "VCC" H 1217 1723 50  0000 C CNN
+F 2 "" H 1200 1550 50  0001 C CNN
+F 3 "" H 1200 1550 50  0001 C CNN
+	1    1200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 60599AE4
+P 1200 1850
+F 0 "#PWR0126" H 1200 1600 50  0001 C CNN
+F 1 "GND" H 1205 1677 50  0000 C CNN
+F 2 "" H 1200 1850 50  0001 C CNN
+F 3 "" H 1200 1850 50  0001 C CNN
+	1    1200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1600 1200 1600
+Wire Wire Line
+	1200 1600 1200 1550
+Wire Wire Line
+	1100 1800 1200 1800
+Wire Wire Line
+	1200 1800 1200 1850
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 605A727A
+P 1100 1050
+F 0 "J4" H 1018 725 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1018 816 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical" H 1100 1050 50  0001 C CNN
+F 3 "~" H 1100 1050 50  0001 C CNN
+	1    1100 1050
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
