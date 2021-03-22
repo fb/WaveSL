@@ -1199,4 +1199,26 @@ Text Notes 7700 4800 0    50   ~ 0
 I2C: 0x60
 Text Notes 7100 4800 0    50   ~ 0
 I2C: 0x72
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 60688719
+P 9200 1850
+F 0 "FID1" H 9285 1896 50  0000 L CNN
+F 1 "Fiducial" H 9285 1805 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 9200 1850 50  0001 C CNN
+F 3 "~" H 9200 1850 50  0001 C CNN
+	1    9200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 606894F1
+P 9200 2050
+F 0 "FID2" H 9285 2096 50  0000 L CNN
+F 1 "Fiducial" H 9285 2005 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 9200 2050 50  0001 C CNN
+F 3 "~" H 9200 2050 50  0001 C CNN
+	1    9200 2050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
