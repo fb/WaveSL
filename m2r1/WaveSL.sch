@@ -1238,4 +1238,6 @@ F 3 "~" H 9200 2050 50  0001 C CNN
 	1    9200 2050
 	1    0    0    -1  
 $EndComp
+Text Notes 3900 5300 0    50   ~ 0
+PIO0_12 is ISP Pin TODO TP
 $EndSCHEMATC
